@@ -20,5 +20,10 @@ public class NewBehaviourScript : MonoBehaviour
         {
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
+
+        if (Input.GetKey("w"))
+        {
+        rb.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
+        }
     }
 }
